@@ -1,15 +1,15 @@
 var app = (function (){
 
+    var cel;
+
     function getFahrenheitToCelsius(){
-        fahrenheit = $("#num").val();
-        var celsius = _convertFahrenheitToCelsius(fahrenheit);
-        $("#Answer").text("Answer: " + celsius);
+        var fahrenheit = $("#num").val();
+        appClient.getFahrenheitToCelsius(fahrenheit, _setCelsius)
     }
 
-    function _convertFahrenheitToCelsius(fahrenheit){
-        return ((fahrenheit-32)*5)/9;
+    function _setCelsius(data){
+        $("#Answer").text("Answer: " + JSON.stringify(data));
     }
-
     return{
         getFahrenheitToCelsius: getFahrenheitToCelsius
     }

@@ -16,7 +16,7 @@ public class App {
     public static String convert(Request req, Response res){
         Double fahrenheit = Double.parseDouble(req.queryParams("num"));
         Double celsius = ((fahrenheit-32)*5)/9;
-        String answer =  "{ \"input\": "+fahrenheit+" \", output\": "+ celsius +"}";
+        String answer =  "{ \"input\": "+fahrenheit+ " , \"output\": "+ celsius +"}";
         return answer;
     }
 
