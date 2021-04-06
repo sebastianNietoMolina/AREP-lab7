@@ -7,6 +7,7 @@ Link video youtube.
 # TAREA DE AMAZON GATEWAY Y LAMBDA
 
 Este proyecto busca implementar un servicio web en sapark el cual pueda utilizar un servicio de AWS llamado EC2, por medio de una imagen docker. El servicio API Gateway debe consumir el servicio de EC2 y mostrar de igual forma el funcionamiento de EC2. Finalmente, debemos crear un servicio S3 que consuma el servicio de API Gateway y mostrar su funcionamiento por medio de una pagina creada con js.
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -73,11 +74,30 @@ docker run -d -p 36000:6000 --name nombreDelContenedor juanmol/convert
 
 Podrá ver lo siguiente.
 
+![](prueba/prueba1.PNG)
+
 Ahora debe generar el API Gateway, para ello debe crear el servicio y posteriormente hacer la siguiente configuración.
+
+![](prueba/prueba21.PNG)
 
 Después de eso, debe desplegar el API y podrá ver la siguiente página.
 
+![](prueba/prueba2.PNG)
+
 Finalmente debemos generar el s3, para ello, debemos hacer la siguiente configuración y se desplegara automáticamente.
+
+Primero debemos subir los archivos y debemos hacer publico el index.html
+
+![](prueba/prueba31.PNG)
+
+Luego abrimos dando clic sobre index.html y ahí nos la url para abrir la página.
+
+![](prueba/prueba32.PNG)
+
+Finalmente podemos ver lo siguiente.
+
+![](prueba/prueba3.PNG)
+
 
 
 ## Autores ✒️
